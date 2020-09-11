@@ -1,7 +1,7 @@
 {
-    "name": "ThumbJoystick",
-    "version": "0.0.1",
-    "description": "A Microsoft MakeCode package for Seeed Studio Grove module",
+    "name": "双轴按键摇杆",
+    "version": "1.0",
+    "description": "双轴按键摇杆模块，用于机器人的方向控制",
     "license": "MIT",
     "dependencies": {
         "core": "*"
