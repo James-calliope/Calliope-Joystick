@@ -12,25 +12,25 @@ enum GroveJoystickPins {
 }
 
 enum GroveJoystickKey {
-    //% block=None
+    //% block=空闲
     None = 0,
-    //% block=Up
+    //% block=上
     Up = 1,
-    //% block=Down
+    //% block=下
     Down = 2,
-    //% block=Left
+    //% block=左
     Left = 3,
-    //% block=Right
+    //% block=右
     Right = 4,
-    //% block=UpperLeft
+    //% block=左上
     UL = 5,
-    //% block=LowerLeft
+    //% block=左下
     LL = 6,
-    //% block=UpperRight
+    //% block=右上
     UR = 7,
-    //% block=LowerRight
+    //% block=右下
     LR = 8,
-    //% block=Press
+    //% block=按下
     Press = 9
 }
 
@@ -38,7 +38,7 @@ enum GroveJoystickKey {
 /**
  * Functions to operate Grove module.
  */
-//% weight=10 color=#9F79EE icon="\uf108" block="Grove - Thumb JoyStick"
+//% weight=10 color=#9F79EE icon="\uf108" block="双轴按键摇杆"
 namespace grovejoystick {
     const joystickEventID = 3101;
     let lastJoystick = GroveJoystickKey.None;
@@ -92,7 +92,7 @@ namespace grovejoystick {
      * @param ypin
      * @param handler code to run
      */
-    //% blockId=grove_joystick_create_event block="on Key|%key| at x pin|%xpin| and y pin|%ypin|"
+    //% blockId=grove_joystick_create_event block="摇杆 |%key| X轴引脚 |%xpin| Y轴引脚 |%ypin|"
     //% parts="grovejoystick"
     export function onJoystick(key: GroveJoystickKey, xpin: GroveJoystickPins, ypin: GroveJoystickPins, handler: () => void): void {
         control.onEvent(joystickEventID, key, handler);
