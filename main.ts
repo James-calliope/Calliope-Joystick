@@ -50,7 +50,7 @@ namespace grovejoystick {
          * @param xpin Microbit Pin connected to Grove - Thumb Joystick x pin
          * @param ypin Microbit Pin connected to Grove - Thumb Joystick y pin
          */
-        //% blockId=grove_joystick_read block="%joystick|Read key of joystickon at|%xpin|and|%ypin"
+        //% blockId=grove_joystick_read block="%joystick|读取双轴摇杆 X轴数值 |%xpin| Y轴数值 |%ypin"
         //% parts="grovejoystick"
         //% advanced=true
         read(xpin: GroveJoystickPins, ypin: GroveJoystickPins): number {
