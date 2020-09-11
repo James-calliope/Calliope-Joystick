@@ -1,6 +1,6 @@
-# Grove - ThumbJoystick
+# 双轴按键摇杆模块
 
-This is Makecode Grove - ThumbJoystick package for micro:bit.
+双轴按键摇杆模块用于控制机器人，舵机，马达的运动方向.
 
 ![8](https://user-images.githubusercontent.com/18615354/47488634-54c98180-d877-11e8-861f-667e8b720334.jpg)
 
